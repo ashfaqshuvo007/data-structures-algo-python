@@ -28,4 +28,4 @@ print("after removing hulk & thor , adding doctor strange: ",heros)
 
 #5. Sort the heros list in alphabetical order(Hint. Use dir() functions to list down all functions available in list)
 heros.sort()
-print(heros)
+print("Sorted List: ",heros)

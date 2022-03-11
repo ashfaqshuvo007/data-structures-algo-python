@@ -1,4 +1,7 @@
 # Node class represents an individual element in the list
+from email import header
+
+
 class Node:
     def __init__(self, data=None, next=None):
         self.data = data
@@ -104,6 +107,17 @@ class linkedList:
             itr = itr.next
             count = count + 1
 
+    #Reverse a list
+    def reverse(head):
+        if head is None or head.next is None:
+            return head
+        
+        rest = reverse(head.next)
+
+        head.next.next = head
+        head.next = None
+
+        return rest
 
 if __name__ == '__main__':
     ll = linkedList()
@@ -117,9 +131,15 @@ if __name__ == '__main__':
 
     ll.insert_values(["kola", "Aam", "Jaam", "Kathal", "lichu"])
     ll.print()
-    print("Length: ", ll.get_length())
-    # ll.remove_from(3)
-    ll.insert_at(0, "dragonfruit")
-    ll.insert_at(3, "janina")
+    ll.reverse()
+    print("====After Reverse")
     ll.print()
-    print("Length after removal: ", ll.get_length())
+    # print("Length: ", ll.get_length())
+    # # ll.remove_from(3)
+    # ll.insert_at(0, "dragonfruit")
+    # ll.insert_at(3, "janina")
+    # ll.print()
+    # print("Length after removal: ", ll.get_length())
+
+    # ll.insert_at_end("Jamburaaaa")
+    # ll.print()
