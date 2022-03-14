@@ -58,6 +58,17 @@ class Graph:
 
         return shortest_path
 
+    def has_path(self,source,destination):
+        if(source == destination): return True
+
+        for neighbour in self.graph_dict[source]:
+            if (self.has_path(neighbour,destination) == True):
+                return True
+
+        return False
+
+
+    
 
 if __name__ == '__main__':
     routes = [
@@ -71,9 +82,13 @@ if __name__ == '__main__':
 
     route_graph = Graph(routes)
 
-    start = "Paris"
+    start = "Mumbai"
     end = "New York"
 
     # print(f"Paths from {start} to {end}: ", route_graph.get_paths(start, end))
 
-    print(f"Shortest Path from {start} to {end}: ", route_graph.get_shortest_path(start, end))
+    # print(f"Shortest Path from {start} to {end}: ", route_graph.get_shortest_path(start, end))
+
+    print(f"Does Path exists from {start} to {end}: ", route_graph.has_path(start, end))
+
+
