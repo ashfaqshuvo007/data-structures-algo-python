@@ -94,5 +94,3 @@ if __name__ == '__main__':
 
 	llist.traverse()
 
-# This code is contributed by
-# Aditya Singh

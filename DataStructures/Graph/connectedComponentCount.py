@@ -26,10 +26,6 @@ def explore(graph,current,visited):
 
 
 
-
-
-
-
 if __name__ == '__main__':
     graph = {
         0: [8,1,5],
