@@ -5,7 +5,7 @@ An Anagram is a word or phrase formed by rearranging the letters of a different 
 
 """
 from collections import defaultdict
-strs = ["eat","tea","tan","ate","nat","bat"]
+
 
 def groupAnagrams(strs):
     anagrams = defaultdict(list)
@@ -17,4 +17,6 @@ def groupAnagrams(strs):
             anagrams[sortedWord].append(word)
     print(list(anagrams.values()))
             
-            
+if __name__ == '__main__':
+    strs = ["eat","tea","tan","ate","nat","bat"]
+    groupAnagrams(strs)
