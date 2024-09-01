@@ -3,22 +3,31 @@ Practice sessions for job interviews. Started a long time back but never continu
 
 ## Leetcode Solutions:
 
-- [217-Contains Duplicate](leetcode/217-ContainsDuplicate.py)
-- [242-ValidAnagram](leetcode/242-ValidAnagram.py)
-- [1-TwoSum](leetcode/1-TwoSum.py)
-- [11-MostWaterContainer](leetcode/11-MostWaterContainer.py)
-- [15-3Sum](leetcode/15-3Sum.py)
-- [36-ValidSudoku](leetcode/36-ValidSudoku.py)
-- [42-TrappingRainwater](leetcode/42-TrappingRainwater.py)
-- [49-GroupAnagrams](leetcode/49-GroupAnagrams.py)
-- [25-ValidPalindrome](leetcode/125-ValidPalindrome.py)
-- [128-LongestConsecutiveSequence](leetcode/128-LongestConsecutiveSequence.py)
-- [167-TwoSumII](leetcode/167-TwoSumII.py)
-- [238-ProductArrayExceptSelf](leetcode/238-ProductArrayExceptSelf.py)
-- [347-TopKElements](leetcode/347-TopKElements.py)
-- [659-EncodeDecodeString](leetcode/659-EncodeDecodeString.py)
-- [1800-MaxASCSubarrSum](leetcode/1800-MaxASCSubarrSum.py)
-- [2461-MaxSumDistinctSubarrayLengthk](leetcode/2461-MaxSumDistinctSubarrayLengthk.py)
+Following NEETCODE IO DSA roadmap.
+
+### Array & Hashing
+- [217 - Contains Duplicate](leetcode/217-ContainsDuplicate.py)
+- [242 - Valid Anagram](leetcode/242-ValidAnagram.py)
+- [1 - Two Sum](leetcode/1-TwoSum.py)
+- [49 - Group Anagrams](leetcode/49-GroupAnagrams.py)
+- [347 - Top K Elements](leetcode/347-TopKElements.py)
+- [659 - Encode Decode String](leetcode/659-EncodeDecodeString.py)
+- [238 - Product of Array Except Self](leetcode/238-ProductArrayExceptSelf.py)
+- [36 - Valid Sudoku](leetcode/36-ValidSudoku.py)
+- [128 - Longest Consecutive Sequence](leetcode/128-LongestConsecutiveSequence.py)
+
+### Two pointers
+
+- [25 - Valid Palindrome](leetcode/125-ValidPalindrome.py)
+- [167 - Two Sum II Sorted Array](leetcode/167-TwoSumII.py)
+- [15 - 3 Sum](leetcode/15-3Sum.py)
+- [11 - Container with most water](leetcode/11-MostWaterContainer.py)
+- [42 - Trapping Rain water](leetcode/42-TrappingRainwater.py)
+
+
+### Miscellaneous
+- [1800 - MaxASCSubarrSum](leetcode/1800-MaxASCSubarrSum.py)
+- [2461 - MaxSumDistinctSubarrayLengthk](leetcode/2461-MaxSumDistinctSubarrayLengthk.py)
 
 
 ## Contact Me:
