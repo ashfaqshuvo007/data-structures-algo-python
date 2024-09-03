@@ -24,6 +24,10 @@ Following NEETCODE IO DSA roadmap.
 - [11 - Container with most water](leetcode/11-MostWaterContainer.py)
 - [42 - Trapping Rain water](leetcode/42-TrappingRainwater.py)
 
+### Stack
+
+- [20 - Valid Parenthesis](leetcode/20-ValidParenthesis.py)
+- [155 - Minimum Stack](leetcode/155-MinStack.py)
 
 ### Miscellaneous
 - [1800 - MaxASCSubarrSum](leetcode/1800-MaxASCSubarrSum.py)
