@@ -27,6 +27,8 @@ Following NEETCODE IO DSA roadmap.
 ### Stack
 
 - [20 - Valid Parenthesis](leetcode/20-ValidParenthesis.py)
+- [22 - Generate Parenthesis](leetcode/22-GenerateParenthesis.py)
+- [150 - Evaluate Reverse Polish Notation](leetcode/150-EvaluateReversePolishNotation.py)
 - [155 - Minimum Stack](leetcode/155-MinStack.py)
 
 ### Miscellaneous
