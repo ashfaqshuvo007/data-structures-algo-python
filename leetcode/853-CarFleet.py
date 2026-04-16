@@ -25,5 +25,3 @@ if __name__ == "__main__":
     speed = [2, 4, 1, 1, 3]
     result = solution.carFleet(target, position, speed)
     print(result)
-
-    
