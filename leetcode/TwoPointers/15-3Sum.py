@@ -31,3 +31,8 @@ def threeSum(self, nums: List[int]) -> List[List[int]]:
                 while left < right and nums[right] == nums[right + 1]:
                     right -= 1
     return [list(triplet) for triplet in resultList]
+
+if __name__ == "__main__":
+    nums = [-1,0,1,2,-1,-4]
+    print(threeSum(nums))
+    

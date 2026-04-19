@@ -8,20 +8,23 @@ The tests are generated such that there is exactly one solution. You may not use
 **** Your solution must use only constant extra space.*****
 '''
     
-def twoSum(self, numbers: List[int], target: int) -> List[int]:
+from typing import List
+
+class Solution:
+    def twoSum(self, numbers: List[int], target: int) -> List[int]:
     # Solution 1
     # Without any storing and with two pointers CONSTANT SPACE
-    start = 0
-    end = len(numbers) - 1
+        start = 0
+        end = len(numbers) - 1
 
-    while(start < end):
-        sum = numbers[start] + numbers[end]
-        if(sum > target):
-            end -= 1
-        elif(sum < target):
-            start += 1
-        else:
-            return [start + 1, end + 1]
+        while(start < end):
+            sum = numbers[start] + numbers[end]
+            if(sum > target):
+                end -= 1
+            elif(sum < target):
+                start += 1
+            else:
+                return [start + 1, end + 1]
 
     # Solution 2
     # WIth hasMap storing the visited elements with index and checking if the 
@@ -34,3 +37,11 @@ def twoSum(self, numbers: List[int], target: int) -> List[int]:
     #         return [prevMap[diff] + 1, i+1]
     #     prevMap[n] = i
     # return
+
+
+if __name__ == "__main__":
+    solution = Solution()
+    numbers = [2,7,11,15]
+    target = 9
+    print(solution.twoSum(numbers, target))
+    

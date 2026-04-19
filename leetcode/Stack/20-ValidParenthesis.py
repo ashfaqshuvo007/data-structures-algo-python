@@ -29,5 +29,11 @@ class Solution:
             stack.pop()
         return not stack
     
+if __name__ == "__main__":
+    s = "([)]"
+    print(Solution().isValid(s))
+
+    
+    
 
         

@@ -5,6 +5,9 @@ compute how much water it can trap after raining.
 *** NEED TO REVISIT ***
 '''
 
+from typing import List
+
+
 def trap(self, height: List[int]) -> int:
     if not height:
         return 0
@@ -24,3 +27,6 @@ def trap(self, height: List[int]) -> int:
             res += (mr - height[r])
     return res
         
+if __name__ == "__main__":
+    height = [0,1,0,2,1,0,1,3,2,1,2,1]
+    print(trap(height))

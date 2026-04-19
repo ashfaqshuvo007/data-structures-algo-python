@@ -69,6 +69,8 @@ def isPalindrome(self, s: str) -> bool:
 
     # return isPalinDrome
 
-
+if __name__ == "__main__":
+    s = "A man, a plan, a canal: Panama"
+    print(isPalindrome(s))
         
        

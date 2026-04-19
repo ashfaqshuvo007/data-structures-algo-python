@@ -19,7 +19,7 @@ class Solution:
 
 
         def backtrack(openN, closedN):
-            # Valid and we stop IIF open === close === n
+            # Valid and we stop IF open === close === n
             if openN == closedN == n:
                 result.append("".join(stack))
             

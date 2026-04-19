@@ -13,6 +13,7 @@ Note:
 '''
 
 from collections import defaultdict
+from typing import List
 class Solution:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
         rows = defaultdict(set)
@@ -35,4 +36,17 @@ class Solution:
                 squares[(r // 3, c // 3)].add(board[r][c])
         # Finally if no duplicate return
         return True
+    
+if __name__ == "__main__":
+    board = [["5","3",".",".","7",".",".",".","."],
+             ["6",".",".","1","9","5",".",".","."],
+             [".","9","8",".",".",".",".","6","."],
+             ["8",".",".",".","6",".",".",".","3"],
+             ["4",".",".","8",".","3",".",".","1"],
+             ["7",".",".",".","2",".",".",".","6"],
+             [".","6",".",".",".",".","2","8","."],
+             [".",".",".","4","1","9",".",".","5"],
+             [".",".",".",".","8",".",".","7","9"]]
+    solution = Solution()
+    print(solution.isValidSudoku(board))
 
