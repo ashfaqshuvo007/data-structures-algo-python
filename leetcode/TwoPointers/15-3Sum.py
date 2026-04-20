@@ -3,6 +3,8 @@ Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]]
 
 Notice that the solution set must not contain duplicate triplets.
 '''
+from typing import List
+
 def threeSum(self, nums: List[int]) -> List[List[int]]:
     if all(i == 0 for i in nums): #Handle edge cases
         return [ [0] * 3]
@@ -35,4 +37,4 @@ def threeSum(self, nums: List[int]) -> List[List[int]]:
 if __name__ == "__main__":
     nums = [-1,0,1,2,-1,-4]
     print(threeSum(nums))
-    
+
