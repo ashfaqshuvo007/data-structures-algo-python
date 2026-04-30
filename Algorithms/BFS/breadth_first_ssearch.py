@@ -55,26 +55,23 @@ def build_tree():
 
     return root
 
-#TODO: Need to implement this.
-
 def breadth_first_search(root, target):
     # First add elements to a queue
-    queue = deque()
-    graph = {}
-    graph[root]
+    queue = deque([root])
     visited = set() # To keep track of visited nodes
+
 
     while queue:
         curr = queue.popleft()
-        if curr == target:
+        if curr.data == target:
             return True
-        else:
-            if curr not in visited:
-                breadth_first_search(curr.children, target)
-                visited.add(curr)
+        if curr not in visited:
+            for child in curr.children:
+                queue.append(child)
+            visited.add(curr)
     return False
 
 
 if __name__ == '__main__':
     tree = build_tree()
-    breadth_first_search(tree, "Panasonic")
+    print(breadth_first_search(tree, "Hisense")) # True
