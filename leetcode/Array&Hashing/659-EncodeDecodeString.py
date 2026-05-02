@@ -4,32 +4,35 @@ from typing import List
 def encode(strs: List[str]) -> str:
     encoded_str = ''
     for word in strs:
-        delimiter = str(len(word)) + '#'
-        encoded_str += (delimiter + word)
+        encoded_str += str(len(word)) + '#' + word
     return encoded_str
 
 # Now String == "4#leet4#code"
 def decode(big_str: str) -> List[str]:
-    result_array, pointer = [], 0
+    result_array, i = [], 0
 
     # Loop through the string
-    while pointer < len(big_str):
-        another_pointer = pointer # to get the length and delimiter
-        # Check for the delimiter and get the string 
-        while big_str[another_pointer] != '#':
-            another_pointer += 1
-        string_length = int(big_str[pointer:another_pointer]) 
+    while i < len(big_str):
+        j = i
+        #Find the delimiter
+        while big_str[j] != "#":
+            j += 1
+        print(big_str[i:j])
+        length = int(big_str[i:j])
+        # Update pointers
+        i = j + 1
+        j = i + length
+        # Apend to result
+        result_array.append(big_str[i:j])
+        # Update pointer
+        i = j
         
-        #add the string to the result array
-        result_array.append(big_str[another_pointer + 1:another_pointer + 1 + string_length])
-        # Increment the pointer for the next word
-        pointer = another_pointer + 1 + string_length
     return result_array
 
 
 
 if __name__ == '__main__':
-    strs = ["leet#", "co#de^"]
+    strs = ["leet", "code"]
     print("Encode String")
     encoded_string = encode(strs)
     print(encoded_string)
