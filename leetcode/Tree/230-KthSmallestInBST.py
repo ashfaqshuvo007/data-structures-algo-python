@@ -37,11 +37,11 @@ class Solution:
         #     dfs(node.right)
         
         # dfs(root)
-        # return nodesArr[k - 1]
+        # return nodesArr[k - 1] # 1 - indexed (so k -1 is the result not K)
 
 
         #Aproach 2: Optimal DFS with IN-Order Traversal
-        # WHile traversing, keeping count and if count == k , we found the solution
+        # WHile traversing, keeping count and if count == 0 , we found the solution
         # WE visit left-subtree only when Kth element is not found.
 
         cnt = k
