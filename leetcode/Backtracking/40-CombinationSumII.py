@@ -46,7 +46,7 @@ Output:
 from typing import List
 class Solution:
     def combinationSum2(self, candidates: List[int], target: int) -> List[List[int]]:
-        # Approach 1: Backtracking - Time: O(n*2^n) Space: O(n)
+        #* Approach 1: Backtracking - Time: O(n*2^n) Space: O(n)
         # res = []
         # candidates.sort()
 
@@ -70,8 +70,8 @@ class Solution:
         # dfs(0, [], 0)
         # return res
 
-        # Approach 2: Backtracking - Time: O(n*2^n) Space: O(n)
-        # With path pruning and sorting
+        #* Approach 2: Backtracking - Time: O(n*2^n) Space: O(n)
+        #* With path pruning and sorting
         res = []
         candidates.sort()
 
