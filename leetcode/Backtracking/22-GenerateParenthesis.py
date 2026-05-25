@@ -1,23 +1,25 @@
+
+#* Leetcode - 22. Generate Parenthesis -  MEDIUM 
+
 '''
-Leetcode - 22 MEDIUM
 You are given an integer n. Return all well-formed parentheses strings that you can 
 generate with n pairs of parentheses.
+
+#? Example 1:
+Input: n = 3
+Output: ["((()))","(()())","(())()","()(())","()()()"]
+
+#? Example 2:
+Input: n = 1
+Output: ["()"]
 
 '''
 
 from typing import List
-
-
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
-        
-        # Only add open parenthesis if open < n
-        
-
         stack = []
         result = []
-
-
         def backtrack(openN, closedN):
             # Valid and we stop IF open === close === n
             if openN == closedN == n:
@@ -42,4 +44,4 @@ class Solution:
 
 if __name__ == '__main__':
     sln = Solution()
-    print(sln.generateParenthesis(5))
+    print(sln.generateParenthesis(2))
